@@ -1,11 +1,26 @@
-const burger = require("../models/burger");
+const burger = require("../models/burger")
 
-function router(app){
-    app.get("/", async function(req, res){
+function router(app) {
+    app.get("/", async function (req, res) {
         console.log('[GET] getting list of burgers')
-        
-        res.redirect("/index.html");
+        const burgersAvailable = await burger.getAvailable()
+        const burgersDevoured = await burger.getDevoured()
+        console.log(`burgersAvailable: `, burgersAvailable)
+        console.log(`burgersDevoured: `, burgersDevoured)
+        res.render('index', { burgersAvailable, burgersDevoured })
     })
+    app.post("/", async function (req, res) {
+        console.log(`[POST] we received this data: ${req.body}`)
+        await burger.addBurger(req.body.burger)
+        console.log(`new list of burgers: ${burger.getAvailable()}`)
+        res.redirect("/")
+    })
+    app.get("/devour/:id", async function (req, res) {
+        console.log(`in /devour: id ${req.params.id}`)
+        await burger.devourBurger(req.params.id)
+        res.redirect("/")
+    })
+
 }
 
 module.exports = router

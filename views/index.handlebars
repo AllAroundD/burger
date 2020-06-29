@@ -1,11 +1,23 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Eat-Da-Burger!</h1>
-    </div>
-</body>
-</html>
+
+        <form action="/" method="POST">
+            <div class="row" style="border: black solid 1px;">
+                <div class="col-sm-3 mx-auto">
+                    <ul>
+                        {{#each burgersAvailable}}
+                        <li>{{id}} {{burger_name}}<a class="btn btn-secondary" href="/devour/{{id}}">Devour It</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col-sm-6 mx-auto text-center">
+                    <textarea name="burger" id="burgerRequest" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        {{#each burgersDevoured}}
+                        <li><s>{{id}} {{burger_name}}</s></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </form>

@@ -16,11 +16,13 @@ app.use(express.json())
 app.engine("handlebars", exphbs({ defaultLayout: "main" }))     // main.handlebars
 app.set("view engine", "handlebars")
 
+
 // pass app to controller for routing
 routesController(app)
 
-
+// have to move this under the routesController after getting handlebars working
 app.use( express.static('public') )
+
 
 // Start the server so that it can begin listening to client requests.
 app.listen(PORT, function () {
