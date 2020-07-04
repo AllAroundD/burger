@@ -10,14 +10,14 @@ function router(app) {
         res.render('index', { burgersAvailable, burgersDevoured })
     })
     app.post("/", async function (req, res) {
-        console.log(`[POST] we received this data: ${req.body}`)
+        console.log(`[POST] received this data: ${req.body}`)
         await burger.addBurger(req.body.burger)
         console.log(`new list of burgers: ${burger.getAvailable()}`)
         res.redirect("/")
     })
     app.get("/devour/:id", async function (req, res) {
-        console.log(`in /devour: id ${req.params.id}`)
         await burger.devourBurger(req.params.id)
+        console.log(`[GET] burger was devoured: ${req.params.id}`)
         res.redirect("/")
     })
 

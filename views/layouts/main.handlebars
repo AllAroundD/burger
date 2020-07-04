@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +13,15 @@
         align-items: center;
         justify-content: center;
     }
-
     #title {
         color: red;
     }
-
     #burgerRequest {
         width: 100%;
     }
-
     .row {
         height: 100%;
     }
-
     footer {
         position: fixed;
         bottom: 0px;
@@ -45,19 +40,17 @@
         padding: 30px;
     }
 </style>
-
 <body>
-    <div class="container mx-auto">
-        <div class="card mx-auto" style="width: 12rem;">
-            <img src="./assets/img/hamburger.png" class="card-img-top" alt="burger">
-            <div class="card-body  mx-auto">
-                <h5 id="title" class="card-title">Eat-Da-Burger!</h5>
-            </div>
+    <div class="card mx-auto" style="width: 15rem;border: 0px">
+        <img src="./assets/img/hamburger.png" class="card-img-top" alt="burger">
+        <div class="card-body  mx-auto">
+            <h4 id="title" class="card-title">Eat-Da-Burger!</h4>
         </div>
-        {{{body}}}
-        <p class="text-center">Enter a burger you want to eat and click the "Submit" button</p>
     </div>
+    {{{body}}}
+    <p class="text-center">In the textbox above, enter a name of a burger that you want to eat and click the "Submit" button.
+        <br>Once submitted, the burger name will show on the left with a Devour It button.
+    </p>
     <footer>&copy; Copyright 2020 Doug Moore</footer>
 </body>
-
 </html>
