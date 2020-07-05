@@ -1,4 +1,4 @@
-https://img.shields.io/github/issues/AllAroundD/burger https://img.shields.io/github/forks/AllAroundD/burger https://img.shields.io/github/stars/AllAroundD/burger https://img.shields.io/github/license/AllAroundD/burger
+(https://img.shields.io/github/issues/AllAroundD/burger) (https://img.shields.io/github/forks/AllAroundD/burger) (https://img.shields.io/github/stars/AllAroundD/burger) (https://img.shields.io/github/license/AllAroundD/burger)
 
 
 # burger-logger
@@ -37,7 +37,7 @@ Here is an example of the application in action:
 ![burger logger demo](./public/assets/img/burger-demo.gif)
 
 ## License
-  [MIT](https://github.com/AllAroundD/burger/LICENSE.txt)
+  [MIT](https://github.com/AllAroundD/burger/LICENSE)
 
 ## Contributing
   
