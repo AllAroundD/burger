@@ -37,7 +37,7 @@ Here is an example of the application in action:
 ![burger logger demo](./public/assets/img/burger-demo.gif)
 
 ## License
-  [MIT](https://github.com/AllAroundD/burger/LICENSE)
+  [MIT](LICENSE)
 
 ## Contributing
   
