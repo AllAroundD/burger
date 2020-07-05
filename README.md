@@ -1,4 +1,4 @@
-(https://img.shields.io/github/issues/AllAroundD/burger) (https://img.shields.io/github/forks/AllAroundD/burger) (https://img.shields.io/github/stars/AllAroundD/burger) (https://img.shields.io/github/license/AllAroundD/burger)
+![issues](https://img.shields.io/github/issues/AllAroundD/burger) ![forks](https://img.shields.io/github/forks/AllAroundD/burger) ![stars](https://img.shields.io/github/stars/AllAroundD/burger) ![license](https://img.shields.io/github/license/AllAroundD/burger)
 
 
 # burger-logger
